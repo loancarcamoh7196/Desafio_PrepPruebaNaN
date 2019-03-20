@@ -1,0 +1,33 @@
+<br>
+<h2>Project</h2>
+<p>
+  <strong>Name:</strong>
+  <%= @project.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @project.description %>
+</p>
+
+<hr>
+<br>
+
+<h4>Project Team</h4>
+
+<%= render 'people-table' %>
+
+<hr>
+<br>
+
+<h4>People Available</h4>
+<br>
+
+<%= render 'form-workshop' %>
+
+<br>
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>
+
+<br><br>

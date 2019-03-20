@@ -1,0 +1,9 @@
+<%= form_with model: [@project, @workshop], local: true do |f| %>
+  <div class="field">
+    <%= f.label :person_id, 'Person' %>
+    <%= f.select :person_id, options_for_select(@people,:fullname), prompt: 'Select Person' %>
+  </div>
+  <br>
+  <%= f.submit "Submit", disable_with: 'Submiting...', class: 'btn btn-sm btn-success' %>
+
+<% end %>

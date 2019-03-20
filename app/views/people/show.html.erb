@@ -1,0 +1,28 @@
+<br>
+<h2>Person</h2>
+<hr>
+
+<p>
+  <strong>Name:</strong>
+  <%= @person.fullname %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @person.email %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @person.position %>
+</p>
+
+<br>
+<h3>Person's Projects</h3>
+
+<%= render 'workshop-table' %>
+
+<%= link_to 'Edit', edit_person_path(@person) %> |
+<%= link_to 'Back', people_path %>
+
+<br><br>
